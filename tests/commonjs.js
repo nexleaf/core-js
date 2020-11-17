@@ -963,7 +963,6 @@ for (PATH of ['core-js-pure', 'core-js']) {
   load('proposals/collection-methods');
   load('proposals/collection-of-from');
   load('proposals/efficient-64-bit-arithmetic');
-  load('proposals/global-this');
   load('proposals/iterator-helpers');
   load('proposals/math-extensions');
   load('proposals/math-signbit');
@@ -972,7 +971,6 @@ for (PATH of ['core-js-pure', 'core-js']) {
   load('proposals/object-iteration');
   load('proposals/observable');
   load('proposals/pattern-matching');
-  load('proposals/promise-all-settled');
   load('proposals/promise-any');
   load('proposals/promise-try');
   load('proposals/reflect-metadata');
