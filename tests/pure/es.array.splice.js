@@ -24,10 +24,6 @@ QUnit.test('Array#splice', assert => {
     assert.throws(() => splice(null), TypeError);
     assert.throws(() => splice(undefined), TypeError);
   }
-  assert.deepEqual(splice({
-    length: -1,
-    0: 1,
-  }), [], 'uses ToLength');
   array = [];
   array.constructor = { [Symbol.species]: function () { // eslint-disable-line object-shorthand
     return { foo: 1 };

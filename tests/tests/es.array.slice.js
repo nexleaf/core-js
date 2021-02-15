@@ -30,10 +30,6 @@ QUnit.test('Array#slice', assert => {
     assert.throws(() => slice.call(null), TypeError);
     assert.throws(() => slice.call(undefined), TypeError);
   }
-  assert.deepEqual(slice.call({
-    length: -1,
-    0: 1,
-  }, 0, 1), [], 'uses ToLength');
   array = [];
   array.constructor = { [Symbol.species]: function () { // eslint-disable-line object-shorthand
     return { foo: 1 };
